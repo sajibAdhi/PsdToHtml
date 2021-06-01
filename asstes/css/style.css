@@ -18,3 +18,64 @@ a:focus, input:focus, textarea:focus, button:focus{
 a:hover{
     text-decoration: none;
 }
+
+.newsletter-background{
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-background:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: tt;
+    background-color: #333;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.newsletter-padding{
+    padding: 100px 0;
+}
+
+.newsletter-padding h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.newsletter-form{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.newsletter-form form{
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"]{
+    background-color: #fff;
+    opacity: 0.6;
+    width: 70%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.newsletter-form input[type="submit"]{
+    background-color: #ddd;
+    border: none;
+    width: 20%;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.newsletter-form p{
+    font-style: italic;
+}
